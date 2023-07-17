@@ -13,6 +13,14 @@
   color-scheme: dark;
 }
 
+.slick-slider {
+  width: 100%;
+}
+
+.slick-arrow {
+  
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;

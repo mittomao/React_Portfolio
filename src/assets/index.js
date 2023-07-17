@@ -20,6 +20,9 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import sitecore from "./tech/sitecore.png";
+import dotnet from "./tech/dotnet.png";
+import sqlserver from "./tech/sqlserver.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -58,6 +61,9 @@ export {
   tailwind,
   typescript,
   threejs,
+  sitecore,
+  dotnet,
+  sqlserver,
   meta,
   shopify,
   starbucks,

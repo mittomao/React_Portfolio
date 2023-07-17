@@ -15,6 +15,7 @@ import {
   git,
   figma,
   docker,
+  sqlserver,
   meta,
   starbucks,
   iittechcom,
@@ -25,6 +26,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  sitecore,
+  dotnet,
   nature,
   travel,
   spa
@@ -90,10 +93,10 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
   {
     name: "React JS",
     icon: reactjs,
@@ -102,10 +105,10 @@ const technologies = [
     name: "Redux Toolkit",
     icon: redux,
   },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
+  // {
+  //   name: "Tailwind CSS",
+  //   icon: tailwind,
+  // },
   {
     name: "Node JS",
     icon: nodejs,
@@ -114,10 +117,10 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
   {
     name: "git",
     icon: git,
@@ -129,6 +132,18 @@ const technologies = [
   {
     name: "docker",
     icon: docker,
+  },
+  {
+    name: "sitecore",
+    icon: sitecore,
+  },
+  {
+    name: "dotnet",
+    icon: dotnet,
+  },
+  {
+    name: "sqlserver",
+    icon: sqlserver,
   },
 ];
 
@@ -215,70 +230,103 @@ const testimonials = [
   },
 ];
 
-const projects = [
-  {
-    name: "Natural landscape",
-    description:
-      "Đây là trang web mà tôi muốn giới thiệu tới mọi người về cảnh quan thiên nhiên đẹp.",
-    tags: [
-      {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "JAVASCRIPT",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: nature,
-    source_code_link: "https://mittomao.github.io/Landing_01/",
+const projects = {
+  settings: {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1
   },
-  {
-    name: "Travel",
-    description:
-      "Đây là trang web giới thiệu về các tour du lịch",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: travel,
-    source_code_link: "https://mittomao.github.io/travel1/",
-  },
-  {
-    name: "Spa",
-    description:
-      "Đây là một trang web mà chắc hẳn chị em sẽ rất thích. Đó chính là spa làm đẹp.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: spa,
-    source_code_link: "https://mittomao.github.io/Cat_Layout_LepSpa/",
-  },
-];
+  cards: [
+    {
+      name: "Natural landscape",
+      description:
+        "Đây là trang web mà tôi muốn giới thiệu tới mọi người về cảnh quan thiên nhiên đẹp.",
+      tags: [
+        {
+          name: "HTML",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "JAVASCRIPT",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: nature,
+      source_code_link: "https://mittomao.github.io/Landing_01/",
+    },
+    {
+      name: "Travel",
+      description:
+        "Đây là trang web giới thiệu về các tour du lịch",
+      tags: [
+        {
+          name: "HTML",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "JAVASCRIPT",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: travel,
+      source_code_link: "https://mittomao.github.io/travel1/",
+    },
+    {
+      name: "Spa",
+      description:
+        "Đây là một trang web mà chắc hẳn chị em sẽ rất thích. Đó chính là spa làm đẹp.",
+      tags: [
+        {
+          name: "HTML",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "JAVASCRIPT",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: spa,
+      source_code_link: "https://mittomao.github.io/Cat_Layout_LepSpa/",
+    },
+    {
+      name: "Blogger",
+      description: "Đây là trang web mà tôi chia sẻ kinh nghiệm về các kiến thức mà tôi đã trải nghiệm trong quá trình học tập và làm viêc. Hy vọng mọi người sẽ đóng góp trao đổi để cùng nhau phát triển.",
+      tags: [
+        {
+          name: "EJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "JAVASCRIPT",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Node Express",
+          color: "green-text-gradient",
+        }
+      ],
+      image: nature,
+      source_code_link: "https://wainii-blogger.up.railway.app/",
+    },
+  ],
+}
 
 export { services, technologies, experiences, testimonials, projects };
